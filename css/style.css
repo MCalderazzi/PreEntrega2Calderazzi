@@ -22,53 +22,72 @@ body{
 
 }
 /*titulo principal*/
+
+
+
 .h1{
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
     font-style: italic;
-    font-size: 50px;
+    font-size: 250%;
     color: red;
-    text-align: center;
-    background-color: blue;
-    margin-bottom: 17px;
-    width: 55%;
-    height: 55%;
+    text-align: start;
+    background-color: rgb(11, 11, 100);
+    width: 57%;
+    height: 57%;
     margin: auto;
     display: flex;
+    text-align: end;
+
+
 }
 
 .icono{
-    width: 50px;
-    height: 50px
+    display: flex;
+    flex direction: row;
+    justify-self: start;
+    border: 3px solid black;
+    border-radius: 700px;
+    width: 10%;
+    height: 10%;
+
 }
 
 
+
+
 /*BARRA DE NAVEGACION*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5%;
+    margin-top: 1%;
+    
+    
+}
+
+
 header nav ul li{
     display: inline;
     text-align: center;
 }
-.lista_principal{
-   
-    text-align: center;
-}
+
 
 header nav ul li a{
     list-style: none;
     text-decoration: none;
     color: rgb(254, 5, 5);
-    font-weight: 1000;
-    font-size: 24.5px;
+    font-weight: 168%;
+    font-size: 168%;
     border: 1px solid blue;
     background-color: rgb(3, 16, 131);
-    width: 55%;
-    height: 55%;
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
-    margin-top: 0px;
-    padding-top: 3px;
-    display: inline;
-    text-align: center;
+    margin-top: 5px;
+    padding-top: 1%;
+    ;
+    
     
     
 }
@@ -76,20 +95,49 @@ header nav ul li a{
 
 /* NOTICIAS*/
 
+
+
 .noticias{
     border: 3px solid blue;
     color: rgb(237, 4, 4);
     background-color: rgb(14, 21, 64) ;
     margin: auto;
     padding: 20px;
-    width: 835px;
-    height: 400px;
+    width: 60%;
+    height: 50%;
     display: flex;
     list-style: none;
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
     
+
+    display: grid;
+    grid-column-gap: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr 0.5fr; 
+    grid-template-areas: 
+    "imagen titulo titulo"
+    "imagen principal principal"
+    "imagen principal principal"
+    "copete principal principal";
+    
+ 
 }
+h2 h3 h4{
+    grid-area: titulo;
+    
+}
+img{
+    grid-area: imagen;
+}
+#p_principal{
+    grid-area: principal;
+}
+#p_imagen{
+    grid-area: copete;
+    
+}
+
 
 .noticias__contactanos{
     list-style: none;
@@ -97,8 +145,8 @@ header nav ul li a{
 }
 
 .noticias__tamaño_imagen{
-    width: 350px;
-    height: 250px;
+    width: 130%;
+    height: 103%;
 
 }
 
@@ -108,8 +156,12 @@ p{
     display: block;
     overflow: hidden
     
+    
 
 }
+
+
+
 
 
 /*PIE DE PAGINA*/
@@ -119,18 +171,24 @@ footer{
     font-size: 25px;
     border: 3px solid blue;
     background-color: cyan;
-    width: 835px;
-    height:100px;
+    width: 60%;
+    height: 7%;
     margin: auto;
     list-style: none;
     text-decoration: none;
-    
+    display: flex;
+    margin-top: 0.5%;
+
+
 }
 .footer__redes_sociales{
     list-style: none;
     text-decoration: none;
     font-size: 20px;
     color: brown;
+    display: flex;
+    
+    
 }
 
 i{
@@ -151,6 +209,9 @@ i{
 
 }   
    
+.noticias footer{
+    display: flex;
+    flex-direction: row;
+    align-items: ;
+}
 
-
- 

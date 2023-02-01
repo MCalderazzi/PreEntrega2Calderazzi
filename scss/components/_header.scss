@@ -1,0 +1,46 @@
+header{
+    nav{
+        ul{
+            li{
+                display: inline;
+                text-align: center;
+                a{
+                    list-style: none;
+                    text-decoration: none;
+                    color: rgb(254, 5, 5);
+                    font-weight: 168%;
+                    font-size: 168%;
+                    border: 1px solid blue;
+                    background-color: rgb(3, 16, 131);
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-style: italic;
+                    margin-top: 5px;
+                    padding-top: 1%;
+
+                }
+            }
+        }
+    }
+}
+
+.noti:hover{
+    background-color: rgb(6, 232, 248);
+}
+.historia:hover{
+    background-color: rgb(6, 232, 248);
+}
+.vuelta:hover{
+    background-color: rgb(6, 232, 248);
+}
+    
+.depor:hover{
+    background-color: rgb(6, 232, 248);
+}  
+
+.quienes:hover{
+    background-color: rgb(6, 232, 248);
+}
+
+
+
+

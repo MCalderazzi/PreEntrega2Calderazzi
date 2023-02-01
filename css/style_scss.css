@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,100;1,400&display=swap");
+.icono {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-self: start;
+  border: 3px solid black;
+  border-radius: 700px;
+  width: 10%;
+  height: 10%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0.5%;
+  margin-top: 1%;
+}
+
+.noticias_contactanos {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(3, 16, 131);
+  font-size: 25px;
+  border: 3px solid blue;
+  background-color: cyan;
+  width: 60%;
+  height: 7%;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  margin-top: 0.5%;
+}
+
+.noticias footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.noticias {
+  border: 3px solid blue;
+  color: rgb(237, 4, 4);
+  background-color: rgb(14, 21, 64);
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  font-family: "Josefin Sans";
+  font-style: italic;
+}
+
+.footer__redes_sociales {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: brown;
+  display: flex;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/telon.jpg);
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.h1 {
+  font-family: "Josefin Sans";
+  font-style: italic;
+  font-size: 250%;
+  color: red;
+  text-align: end;
+  background-color: rgb(11, 11, 100);
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  text-align: end;
+}
+
+header nav ul li {
+  display: inline;
+  text-align: center;
+}
+header nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(254, 5, 5);
+  font-weight: 168%;
+  font-size: 168%;
+  border: 1px solid blue;
+  background-color: rgb(3, 16, 131);
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  margin-top: 5px;
+  padding-top: 1%;
+}
+
+.noti:hover {
+  background-color: rgb(6, 232, 248);
+}
+
+.historia:hover {
+  background-color: rgb(6, 232, 248);
+}
+
+.vuelta:hover {
+  background-color: rgb(6, 232, 248);
+}
+
+.depor:hover {
+  background-color: rgb(6, 232, 248);
+}
+
+.quienes:hover {
+  background-color: rgb(6, 232, 248);
+}
+
+.noticias {
+  display: grid;
+  grid-column-gap: 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  grid-template-areas: "imagen titulo titulo" "imagen principal principal" "imagen principal principal" "copete principal principal";
+}
+
+h2 {
+  grid-area: titulo;
+}
+
+img {
+  grid-area: imagen;
+}
+
+iframe {
+  grid-area: imagen;
+}
+
+#p_principal {
+  grid-area: principal;
+  margin-top: 5%;
+}
+
+#p_imagen {
+  grid-area: copete;
+  margin-top: 5%;
+}
+
+.noticias__tamaño_imagen {
+  width: 130%;
+  height: 103%;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+}
+
+i {
+  font-size: 35px;
+  color: brown;
+}
+
+.wp {
+  color: green;
+  position: fixed;
+  right: 15px;
+  bottom: 1px;
+  background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+  /* titulo principal */
+  .h1 {
+    font-size: 150%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: s;
+  }
+  /* barra de navegacion */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 0.5%;
+    margin-top: 2%;
+    font-size: 62.5%;
+    padding: 10px 0px 10px 0px;
+    width: auto;
+    height: auto;
+  }
+  /* noticias */
+  h2 {
+    margin-top: 1%;
+  }
+  .noticias {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .noticias__tamaño_imagen {
+    width: auto;
+    height: auto;
+    margin-bottom: 3%;
+  }
+  #p_principal {
+    margin-top: 5%;
+  }
+  #p_imagen {
+    display: none;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2%;
+  }
+  /* pie de pagina */
+  footer {
+    font-size: 105%;
+    width: auto;
+    height: auto;
+  }
+  .wp {
+    right: 1%;
+    bottom: 0;
+    background-color: rgb(3, 4, 5);
+  }
+}
+
+/*# sourceMappingURL=style_scss.css.map */

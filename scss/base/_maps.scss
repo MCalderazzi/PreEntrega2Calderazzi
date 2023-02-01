@@ -1,0 +1,50 @@
+$links:(
+    display_all: flex,
+    list-style_all: none,
+    Width_all: 60%,
+    height_all: 50%,
+    text-decoration_all: none,
+    border_all: 3px solid blue,
+    color_all: rgb(237, 4, 4),
+    margin_all: auto,
+    padding_all: 20px,
+    bg_color_all:rgb(14, 21, 64),
+    font_family_all:'Josefin Sans',
+    color_footer: brown,
+    font_style_all: italic,
+    font_size_all: 20px,
+
+);
+
+.noticias{
+    border: map-get($links, border_all);
+    color: map-get($links, color_all);
+    background-color: map-get($links, bg_color_all);
+    margin: map-get($links, margin_all);
+    padding: map-get($links, padding_all);
+    width: map-get($links, Width_all);
+    height: map-get($links, height_all);
+    display: map-get($links, display_all);
+    
+    font-family: map-get($links, font_family_all);
+    font-style: map-get($links, font_style_all);
+    list-style: map-get($links, List-style_all);
+
+
+}
+
+.footer__redes_sociales{
+    list-style: map-get($links, list-style_all);
+    text-decoration: map-get($links, text-decoration_all);
+    font-size: map-get($links, font_size_all);
+    color: map-get($links, color_footer);
+    display: map-get($links, display_all);
+    
+    
+}
+
+
+
+
+
+

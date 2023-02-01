@@ -1,0 +1,16 @@
+// base
+@import './base/variables';
+@import './base/extends';
+@import './base/maps';
+
+
+
+//components
+
+@import './components/reset';
+@import './components/body';
+@import './components/titulo_principal';
+@import './components/header';
+@import './components/noticias';
+@import './components/footer';
+@import './components/responsive';

@@ -41,7 +41,7 @@ body{
 
 }
 
-.icono{
+.icono {
     background-color: black;
     display: flex;
     flex direction: row;
@@ -258,7 +258,7 @@ i{
     width: auto;
     height: auto;
     display: flex;
-    justify-content: s;
+    
     
     }
 

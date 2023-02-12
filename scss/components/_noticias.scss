@@ -16,7 +16,7 @@ grid-area: titulo;
 
 }
 img {
-grid-area: imagen;
+grid-area: imagen; 
 }
 iframe{
 grid-area: imagen;
@@ -28,7 +28,9 @@ margin-top: 5%;
 #p_imagen{
 grid-area: copete;
 margin-top: 5%;
-
+}
+form{
+grid-area: formulario;    
 }
 
 .noticias__tamaño_imagen{
@@ -40,15 +42,12 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
     display: block;
-    overflow: hidden
+    overflow: hidden;
     
-    
+
 
 }
-
-
-
-
-
-
+.formularios{
+    resize:none;
+}
 

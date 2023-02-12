@@ -1,0 +1,41 @@
+
+.noticias_infame{
+border: 3px solid blue;
+color: rgb(237, 4, 4);
+background-color: rgb(14, 21, 64);
+margin: auto;
+padding: 20px;
+width: 60%;
+height: 50%;
+display: flex;
+font-family: "Josefin Sans";
+font-style: italic;
+list-style: none;
+
+}
+
+.noticias__contactanos{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+
+}
+
+.contenedor{
+    background-color: rgb(255, 170, 127);
+
+    margin: auto;
+    padding: 5px 35px;
+    padding-bottom:30px;
+    border-radius: 3px;
+    margin: auto;
+    font-family: "Josefin Sans";
+    font-style: italic;
+    width: 60%;
+    height: 30%;
+    border: 3px solid rgb(79, 10, 10);
+   
+}

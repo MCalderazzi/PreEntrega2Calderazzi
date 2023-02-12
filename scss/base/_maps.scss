@@ -28,7 +28,7 @@ $links:(
     
     font-family: map-get($links, font_family_all);
     font-style: map-get($links, font_style_all);
-    list-style: map-get($links, List-style_all);
+    list-style: map-get($links, list-style_all);
 
 
 }

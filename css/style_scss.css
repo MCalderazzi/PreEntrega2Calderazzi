@@ -1,12 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,100;1,400&display=swap");
 .icono {
-  background-color: black;
   display: flex;
   flex-direction: row;
   justify-self: start;
-  border: 3px solid black;
-  border-radius: 700px;
   width: 10%;
   height: 10%;
 }
@@ -59,6 +56,7 @@ footer {
   display: flex;
   font-family: "Josefin Sans";
   font-style: italic;
+  list-style: none;
 }
 
 .footer__redes_sociales {
@@ -88,7 +86,7 @@ body {
 .h1 {
   font-family: "Josefin Sans";
   font-style: italic;
-  font-size: 250%;
+  font-size: 275%;
   color: red;
   text-align: end;
   background-color: rgb(11, 11, 100);
@@ -97,6 +95,7 @@ body {
   margin: auto;
   display: flex;
   text-align: end;
+  padding-top: 10px;
 }
 
 header nav ul li {
@@ -167,6 +166,10 @@ iframe {
   margin-top: 5%;
 }
 
+form {
+  grid-area: formulario;
+}
+
 .noticias__tamaño_imagen {
   width: 130%;
   height: 103%;
@@ -177,6 +180,46 @@ p {
   text-align: left;
   display: block;
   overflow: hidden;
+}
+
+.formularios {
+  resize: none;
+}
+
+.noticias_infame {
+  border: 3px solid blue;
+  color: rgb(237, 4, 4);
+  background-color: rgb(14, 21, 64);
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  font-family: "Josefin Sans";
+  font-style: italic;
+  list-style: none;
+}
+
+.noticias__contactanos {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.contenedor {
+  background-color: rgb(255, 170, 127);
+  margin: auto;
+  padding: 5px 35px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  margin: auto;
+  font-family: "Josefin Sans";
+  font-style: italic;
+  width: 60%;
+  height: 30%;
+  border: 3px solid rgb(79, 10, 10);
 }
 
 i {
@@ -238,6 +281,15 @@ i {
     width: 100%;
     height: 100%;
     margin-bottom: 2%;
+  }
+  /* formulario */
+  .contenedor {
+    width: auto;
+    height: auto;
+  }
+  .textarea {
+    width: 100%;
+    height: 80%;
   }
   /* pie de pagina */
   footer {
